@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vehicle-app"
+version = "1.0.0"
+description = "Vehicle Service app implemented on top of the generated Postman SDK"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "vehicle_service_collection_sdk",
+]
+
+[project.scripts]
+vehicle-cli = "vehicle_app.cli:main"
+
+[tool.setuptools]
+packages = ["vehicle_app"]
