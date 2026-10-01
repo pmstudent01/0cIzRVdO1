@@ -1,0 +1,3 @@
+# The Vehicle Service app depends on the locally generated Postman SDK.
+# Installed in editable mode so changes to the generated SDK are picked up.
+-e ../postman/sdks/Collections SDKs/Vehicle Service Collection/python
